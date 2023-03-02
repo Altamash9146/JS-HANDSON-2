@@ -201,20 +201,21 @@
         the integers among which you have to find the second smallest element.</p>
     <h4>Output Format</h4>
     <p> - Return the second smallest integer among the three integers given to you.</p>
-    <pre> → Ans const findSndSmallest = (x,y,z) => {
-    if((x<y && y<z)||(x>y && y>z)){
-      return y
-    }
-    
-    else if((x<y && x>z)||(x>y && x<z)){
-      return x
-    }
-    
-    else{
-      return z
-    }
-};
- </pre>
+    <pre> 
+      → Ans const findSndSmallest = (x,y,z) => {
+        if((x<y && y &lt; z) || (x>y && y>z)){
+          return y
+        }
+        
+        else if((x<y && x>z)||(x>y && x &lt; z)){
+          return x
+        }
+        
+        else{
+          return z
+        }
+    };
+   </pre>
     <hr>
 
     <h4><span class="Q">Q9.</span>Check whether the triangle is Acute or Obtuse</h4>
